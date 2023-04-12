@@ -146,12 +146,13 @@ body {
 /* Section About */
 
 .about,
-.experience,
+.portfolio .experience,
 .skills {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
+.portfolio h2,
 .skills h2 {
   text-align: center;
   font-size: 2rem;
@@ -243,9 +244,131 @@ swiper-slide img {
   margin: 1.5rem auto 1rem;
 }
 
-/* Experience Section */
+/* ====================== Portfolio */
+
+.portfolio p {
+  text-align: center;
+  max-width: 45rem;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.timeline {
+  position: relative;
+  overflow: hidden;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 40px 0;
+  margin: 100px 30rem 0px 30rem;
+}
+
+.timeline:after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 0;
+  border-left: 1px solid #a6a6a6;
+  height: calc(999% * 9);
+  width: 1px;
+  background: #1d1d1d;
+}
+
+.timeline > div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #a6a6a6;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: -40px 0;
+  background: #000;
+}
+
+.timeline > div b {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.timeline > div:nth-child(odd) {
+  width: calc(50% - 24px);
+  left: calc(50% + 24px);
+  position: relative;
+}
+
+.timeline > div:nth-child(odd):after {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background: #a6a6a6;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.timeline > div:nth-child(odd):before {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: calc(50% - 0px);
+  width: 25px;
+  height: 1px;
+  background: #eee;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.timeline > div:nth-child(even) {
+  width: calc(50% - 26px);
+  position: relative;
+}
+
+.timeline > div:nth-child(even):after {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  right: -36px;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background: #a6a6a6;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.timeline > div:nth-child(even):before {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: calc(50% - 0px);
+  width: 25px;
+  height: 1px;
+  background: #a6a6a6;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.timeline > div:hover:before,
+.timeline > div:hover:after {
+  background: red;
+}
+
+/* ====================== Portfolio */
+
+/* ====================== Experience Section */
 
 .experience h2 {
+  margin-top: 100px;
   margin-bottom: 1rem;
   text-align: center;
 }
