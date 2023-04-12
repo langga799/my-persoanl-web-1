@@ -13,3 +13,9 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// Toogle dark mode
+function toogleDarkMode() {
+  let elementBody = document.body;
+  elementBody.classList.toggle("dark-mode");
+}

@@ -1,6 +1,13 @@
 :root {
   --primary: #1ecb7d;
-  --bg: #010101;
+  --bg: #ffffff;
+}
+
+/* ================== Dark Mode Toggle */
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 * {
@@ -15,7 +22,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: white;
+  color: black;
   min-height: 5000px;
 }
 
@@ -78,6 +85,10 @@ body {
 
 #menu-icon {
   display: none;
+}
+
+#moon-icon {
+  color: #ffffff;
 }
 
 /* Hero Section */
